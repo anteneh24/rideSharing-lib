@@ -1,9 +1,10 @@
 
 const elasticsearch = require("elasticsearch")
+const constants = require('../constants/constants')
 
 
 const esClient = elasticsearch.Client({
-    host: "http://172.16.0.56:9200",
+    host: constants.elasticIp,
 })
 
 module.exports={esClient};
